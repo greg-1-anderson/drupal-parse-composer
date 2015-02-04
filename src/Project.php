@@ -117,6 +117,7 @@ class Project
                     $composerMap[$top]['name'] = $this->getName();
                 }
                 $composerMap[$top]['type'] = 'drupal-drush';
+                // Require Drush 6 or later.
                 $composerMap[$top]['require']['drush/drush'] = '>=6';
             }
         }
